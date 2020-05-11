@@ -16,10 +16,6 @@ import json
 import pandas_bokeh
 pandas_bokeh.output_notebook()
 
-from bokeh.plotting import figure
-from bokeh.models import HoverTool
-
-
 def main():
     
     color_list = ['SlateGray', 'LightBlue', ' Brown', 'Sienna',' LightSteelBlue', 'CadetBlue', 'Teal', 'Coral', 'LightSalmon','IndianRed']
