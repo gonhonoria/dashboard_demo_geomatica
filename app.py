@@ -185,6 +185,7 @@ def main():
     elif app_mode == "Data Exploration":
         display_raw(load_data_raw().astype('str'))
     elif app_mode == "Data Distribution":
+        data_dist = load_data_raw()
         graph_visualisation(data, coloris)
     elif app_mode == "Map Visualization":
         data_gpd = gpd.GeoDataFrame(data, geometry=gpd.points_from_xy(data.Longitude, data.Latitude))
