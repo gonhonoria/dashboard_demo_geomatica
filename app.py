@@ -25,7 +25,7 @@ def main():
     departement = gpd.read_file('Département_sn.shp')
     reg = region.to_crs('EPSG:4326')
     dep = departement.to_crs('EPSG:4326')
-    @st.cache
+    @st.cache(allow_output_mutation=True)
     def load_data_raw():
         df = pd.read_excel('coord_region.xlsx')
         return df
